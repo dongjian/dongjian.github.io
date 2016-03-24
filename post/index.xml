@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on dongjian&#39;s blog</title>
-    <link>http://dongjian.github.io/categories/development/</link>
-    <description>Recent content in Development on dongjian&#39;s blog</description>
+    <title>Posts on dongjian&#39;s blog</title>
+    <link>http://dongjian.github.io/post/</link>
+    <description>Recent content in Posts on dongjian&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <managingEditor>381423609@qq.com (dongjian)</managingEditor>
     <webMaster>381423609@qq.com (dongjian)</webMaster>
     <lastBuildDate>Thu, 24 Mar 2016 20:02:12 +0800</lastBuildDate>
-    <atom:link href="http://dongjian.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://dongjian.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>如何快速搭建个人博客hugo &#43; github pages</title>

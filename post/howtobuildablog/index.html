@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://dongjian.github.io/css/styles.css">
+    <link rel="stylesheet" href="http://dongjian.github.io/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://dongjian.github.io//index.xml">
+
+    
+    <title>如何快速搭建个人博客hugo &#43; github pages - dongjian&#39;s blog</title>
+    <meta property='og:title' content="如何快速搭建个人博客hugo &#43; github pages - dongjian&#39;s blog">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://dongjian.github.io/post/howtobuildablog/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://dongjian.github.io/">dongjian&#39;s blog</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/">Blog</a></li>
+              
+              
+              
+              <li><a href="http://weibo.com/1769333170">微博</a></li>
+              
+              
+            </ul>
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://dongjian.github.io/"/>
+        <meta itemprop="dateModified" content="2016-03-24T20:02:12&#43;08:00">
+        <meta itemprop="headline" content="如何快速搭建个人博客hugo &#43; github pages">
+        <meta itemprop="description" content="为什么搭建自己的blog 1.像新浪,CSDN那些平台注册太麻烦了,还要管理用户名密码,还要用邮箱,完了还要进邮箱确认,入口还不好找. 2.像qq空间呢,自从那一年我表哥教会了我妈用qq,家里曾打电话要求我删掉空间不健康的内容.我qq空间就不对好友开放了.更何况买不起黄钻,没面子 3.没广告,能自定义,而且一下子就有了一种我能修电脑的高贵气质 hugo https://gohugo.io hugo是go语言写的,其实用起来跟golang没一点关系,只用到编译好的程序. 它是个生态静态页面的工具.能把md文件渲染成网页.还自带了http sever,有 watch 功能.生成速度很快,watch反映也很快. hugo生成静态网站的好处明显,不用数据库,也不需要你写逻辑,啥玩意儿你也不用管,写文章就完了,写完了就用工具调一条命令,啪!,网站好了. github pages 免费,无限流量,国内外都能上,速度还快. 怕就怕哪天有司机用github pages 飙车,一下被墙了就不好使了 在此呼吁大家遵守交通规则,文明驾驶. 如何使用 安装hugo mac 用户 brew update &amp;&amp; brew install hugo 我系统10.10的,安装的时候brew坏了,卸了从新安装的 brew安装 /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; brew 卸载 ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&quot; windows 用户 去官网下载hugo.exe使用就行了 新建项目 hugo new site /建站文件夹 建完以后文件夹结构如下 tree -a . |-- archetypes |-- config.toml |-- content |-- data |-- layouts `-- static 5 directories, 1 file tree 是个挺好的工具 安装方法 brew install tree 写文章 hugo新建文章 hugo new post/hello.md 然后在./content/post 里面会多一个文件,内容这样的 &#43;&#43;&#43; date = &quot;2016-03-25T00:33:03&#43;08:00&quot; description = &quot;&quot; title = &quot;hello&quot; draft = true &#43;&#43;&#43; draft表示是草稿,不会渲染.把这一行删掉就好了 选主题 https://themes.gohugo.io/ 这里有各种各样的皮肤可以选,我选了比较简洁的hugo_theme_beg 安装方法 在项目里面建一个themes的目录 mkdir themes &amp;&amp; cd themes 然后把你喜欢的主题clone下来 git clone git@github.com:dim0627/hugo_theme_beg.git 用hugo跑服务看下效果 hugo server -w --theme=hugo_theme_beg 打开浏览器访问 http://localhost:1313/ 就能看到效果了.">
+        <meta itemprop="url" content="http://dongjian.github.io/post/howtobuildablog/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://dongjian.github.io/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://dongjian.github.io/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="dongjian&#39;s blog">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2016-03-24T20:02:12&#43;08:00">Thu, Mar 24, 2016</time>
+          <h1 class="article-title">如何快速搭建个人博客hugo &#43; github pages</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          
+
+<h2 id="为什么搭建自己的blog:f908b47f078c0fbac5a1c0241a7003e7">为什么搭建自己的blog</h2>
+
+<p>1.像新浪,CSDN那些平台注册太麻烦了,还要管理用户名密码,还要用邮箱,完了还要进邮箱确认,入口还不好找.</p>
+
+<p>2.像qq空间呢,自从那一年我表哥教会了我妈用qq,家里曾打电话要求我删掉空间不健康的内容.我qq空间就不对好友开放了.更何况买不起黄钻,没面子</p>
+
+<p>3.没广告,能自定义,而且一下子就有了一种我能修电脑的高贵气质</p>
+
+<h2 id="hugo:f908b47f078c0fbac5a1c0241a7003e7">hugo</h2>
+
+<p><a href="https://gohugo.io">https://gohugo.io</a></p>
+
+<p>hugo是go语言写的,其实用起来跟golang没一点关系,只用到编译好的程序.
+它是个生态静态页面的工具.能把md文件渲染成网页.还自带了http sever,有 watch 功能.生成速度很快,watch反映也很快.</p>
+
+<p>hugo生成静态网站的好处明显,不用数据库,也不需要你写逻辑,啥玩意儿你也不用管,写文章就完了,写完了就用工具调一条命令,啪!,网站好了.</p>
+
+<h2 id="github-pages:f908b47f078c0fbac5a1c0241a7003e7">github pages</h2>
+
+<p>免费,无限流量,国内外都能上,速度还快.
+怕就怕哪天有司机用github pages 飙车,一下被墙了就不好使了
+在此呼吁大家遵守交通规则,文明驾驶.</p>
+
+<h2 id="如何使用:f908b47f078c0fbac5a1c0241a7003e7">如何使用</h2>
+
+<h3 id="安装hugo:f908b47f078c0fbac5a1c0241a7003e7">安装hugo</h3>
+
+<p>mac 用户</p>
+
+<pre><code>brew update &amp;&amp; brew install hugo
+</code></pre>
+
+<p>我系统10.10的,安装的时候brew坏了,卸了从新安装的</p>
+
+<p>brew安装</p>
+
+<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+
+<p>brew 卸载</p>
+
+<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&quot;
+</code></pre>
+
+<p>windows 用户</p>
+
+<p>去官网下载hugo.exe使用就行了</p>
+
+<h3 id="新建项目:f908b47f078c0fbac5a1c0241a7003e7">新建项目</h3>
+
+<pre><code>hugo new site /建站文件夹
+</code></pre>
+
+<p>建完以后文件夹结构如下</p>
+
+<pre><code>tree -a
+.
+|-- archetypes
+|-- config.toml
+|-- content
+|-- data
+|-- layouts
+`-- static
+5 directories, 1 file
+</code></pre>
+
+<p>tree 是个挺好的工具 安装方法</p>
+
+<pre><code>brew install tree
+</code></pre>
+
+<h3 id="写文章:f908b47f078c0fbac5a1c0241a7003e7">写文章</h3>
+
+<p>hugo新建文章</p>
+
+<pre><code>hugo new post/hello.md
+</code></pre>
+
+<p>然后在./content/post 里面会多一个文件,内容这样的</p>
+
+<pre><code>+++
+date = &quot;2016-03-25T00:33:03+08:00&quot;
+description = &quot;&quot;
+title = &quot;hello&quot;
+draft = true
++++
+</code></pre>
+
+<p>draft表示是草稿,不会渲染.把这一行删掉就好了</p>
+
+<h3 id="选主题:f908b47f078c0fbac5a1c0241a7003e7">选主题</h3>
+
+<p><a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+
+<p>这里有各种各样的皮肤可以选,我选了比较简洁的hugo_theme_beg</p>
+
+<p>安装方法
+在项目里面建一个themes的目录</p>
+
+<pre><code>mkdir themes &amp;&amp; cd themes
+</code></pre>
+
+<p>然后把你喜欢的主题clone下来</p>
+
+<pre><code>git clone git@github.com:dim0627/hugo_theme_beg.git
+</code></pre>
+
+<h3 id="用hugo跑服务看下效果:f908b47f078c0fbac5a1c0241a7003e7">用hugo跑服务看下效果</h3>
+
+<pre><code>hugo server -w --theme=hugo_theme_beg
+</code></pre>
+
+<p>打开浏览器访问 <a href="http://localhost:1313/">http://localhost:1313/</a></p>
+
+<p>就能看到效果了.</p>
+
+<h3 id="上传至github-pages:f908b47f078c0fbac5a1c0241a7003e7">上传至github pages</h3>
+
+<p>运行</p>
+
+<pre><code>hugo --theme=hugo_theme_beg
+</code></pre>
+
+<p>hugo会自动把渲染好的静态页面放在public下面</p>
+
+<p>在github上建一个项目,命名方式: 用户名.github.io
+然后把public里面的内容push去就可以了
+以后每次修改重新运行上面命令,然后再用git同步即可</p>
+
+<blockquote>
+<p>不会用git的朋友,可以下载一个sourceTree,在github上练习下,无非就是pull-&gt;add/remove-&gt;commit-&gt;push</p>
+</blockquote>
+
+<p>项目根目录下的config.toml记得修改baseURL</p>
+
+<pre><code>baseURL=                    &quot;http://用户名.github.io/&quot;
+</code></pre>
+
+<h3 id="其他:f908b47f078c0fbac5a1c0241a7003e7">其他</h3>
+
+<p>disqus 支持
+只要在config.toml里面添加</p>
+
+<pre><code>disqusShortname = &quot;你的disqus用户名&quot;
+</code></pre>
+
+<p>就可以了,但是disqus被墙了,国内用不了,我就换成了中国的<code>多说</code></p>
+
+<p>把themes/你选的主题/layouts/_default/single.html 里面disqus的换成下面的就行了</p>
+
+<pre><code>&lt;!-- 多说评论框 start --&gt;
+&lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;{{ .URL }}&quot; data-title=&quot;{{ .Title }}&quot; data-url=&quot;{{ .Permalink }}&quot;&gt;&lt;/div&gt;
+&lt;!-- 多说评论框 end --&gt;
+
+&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var duoshuoQuery = {short_name:&quot;{{.Site.Params.duoshuoShortname}}&quot;};
+
+    (function() {
+     var ds = document.createElement('script');
+     ds.type = 'text/javascript';ds.async = true;
+     ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+     ds.charset = 'UTF-8';
+     (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+     })();
+    &lt;/script&gt;
+&lt;!-- 多说公共JS代码 end --&gt;
+</code></pre>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://dongjian.github.io/tags/go" class="tag">go</a> <a href="http://dongjian.github.io/tags/golang" class="tag">golang</a> <a href="http://dongjian.github.io/tags/hugo" class="tag">hugo</a> <a href="http://dongjian.github.io/tags/development" class="tag">development</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fdongjian.github.io%2fpost%2fhowtobuildablog%2f&t=%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2hugo%20%2b%20github%20pages" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fdongjian.github.io%2fpost%2fhowtobuildablog%2f&text=%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2hugo%20%2b%20github%20pages&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fdongjian.github.io%2fpost%2fhowtobuildablog%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fdongjian.github.io%2fpost%2fhowtobuildablog%2f&title=%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2hugo%20%2b%20github%20pages" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+
+          <div class="section">
+
+            
+	<div class="ds-thread"  data-thread-key="" data-title="如何快速搭建个人博客hugo &#43; github pages" data-url="http://dongjian.github.io/post/howtobuildablog/"></div>
+
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"dongjian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+
+
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://dongjian.github.io/post/howtobuildablog/" class="list-group-item">如何快速搭建个人博客hugo &#43; github pages</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://dongjian.github.io/categories/development" class="list-group-item">development</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://dongjian.github.io/tags/development" class="list-group-item">development</a>
+      
+      <a href="http://dongjian.github.io/tags/go" class="list-group-item">go</a>
+      
+      <a href="http://dongjian.github.io/tags/golang" class="list-group-item">golang</a>
+      
+      <a href="http://dongjian.github.io/tags/hugo" class="list-group-item">hugo</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 dongjian&#39;s blog</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

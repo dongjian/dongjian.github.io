@@ -5,375 +5,189 @@
     <link>http://dongjian.github.io/tags/golang/</link>
     <description>Recent content in Golang on dongjian&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 23 Mar 2016 20:17:39 +0800</lastBuildDate>
+    <language>zh-CN</language>
+    <managingEditor>381423609@qq.com (dongjian)</managingEditor>
+    <webMaster>381423609@qq.com (dongjian)</webMaster>
+    <lastBuildDate>Thu, 24 Mar 2016 20:02:12 +0800</lastBuildDate>
     <atom:link href="http://dongjian.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>helloworld</title>
-      <link>http://dongjian.github.io/helloworld%202/</link>
-      <pubDate>Wed, 23 Mar 2016 20:17:39 +0800</pubDate>
-      
-      <guid>http://dongjian.github.io/helloworld%202/</guid>
+      <title>如何快速搭建个人博客hugo &#43; github pages</title>
+      <link>http://dongjian.github.io/post/howtobuildablog/</link>
+      <pubDate>Thu, 24 Mar 2016 20:02:12 +0800</pubDate>
+      <author>381423609@qq.com (dongjian)</author>
+      <guid>http://dongjian.github.io/post/howtobuildablog/</guid>
       <description>
 
-&lt;p&gt;##内容&lt;/p&gt;
+&lt;h2 id=&#34;为什么搭建自己的blog:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;为什么搭建自己的blog&lt;/h2&gt;
 
-&lt;h2 id=&#34;内容:9f7f59440fff31d13f6d71f9b0a39a4f&#34;&gt;内容&lt;/h2&gt;
+&lt;p&gt;1.像新浪,CSDN那些平台注册太麻烦了,还要管理用户名密码,还要用邮箱,完了还要进邮箱确认,入口还不好找.&lt;/p&gt;
 
-&lt;h3 id=&#34;test:9f7f59440fff31d13f6d71f9b0a39a4f&#34;&gt;test&lt;/h3&gt;
+&lt;p&gt;2.像qq空间呢,自从那一年我表哥教会了我妈用qq,家里曾打电话要求我删掉空间不健康的内容.我qq空间就不对好友开放了.更何况买不起黄钻,没面子&lt;/p&gt;
 
-&lt;h4 id=&#34;test-1:9f7f59440fff31d13f6d71f9b0a39a4f&#34;&gt;test&lt;/h4&gt;
+&lt;p&gt;3.没广告,能自定义,而且一下子就有了一种我能修电脑的高贵气质&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;test&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&#34;hugo:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;hugo&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;test
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34;&gt;https://gohugo.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;hugo是go语言写的,其实用起来跟golang没一点关系,只用到编译好的程序.
+它是个生态静态页面的工具.能把md文件渲染成网页.还自带了http sever,有 watch 功能.生成速度很快,watch反映也很快.&lt;/p&gt;
+
+&lt;p&gt;hugo生成静态网站的好处明显,不用数据库,也不需要你写逻辑,啥玩意儿你也不用管,写文章就完了,写完了就用工具调一条命令,啪!,网站好了.&lt;/p&gt;
+
+&lt;h2 id=&#34;github-pages:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;github pages&lt;/h2&gt;
+
+&lt;p&gt;免费,无限流量,国内外都能上,速度还快.
+怕就怕哪天有司机用github pages 飙车,一下被墙了就不好使了
+在此呼吁大家遵守交通规则,文明驾驶.&lt;/p&gt;
+
+&lt;h2 id=&#34;如何使用:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;如何使用&lt;/h2&gt;
+
+&lt;h3 id=&#34;安装hugo:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;安装hugo&lt;/h3&gt;
+
+&lt;p&gt;mac 用户&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;brew update &amp;amp;&amp;amp; brew install hugo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;test&lt;/td&gt;
-&lt;td&gt;呵呵呵呵&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;sdf&lt;/td&gt;
-&lt;td&gt;sdf&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;hr /&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Item&lt;/th&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Computer&lt;/td&gt;
-&lt;td&gt;$1600&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Phone&lt;/td&gt;
-&lt;td&gt;$12&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Pipe&lt;/td&gt;
-&lt;td&gt;$1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;hr /&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Tables&lt;/th&gt;
-&lt;th&gt;Are&lt;/th&gt;
-&lt;th&gt;Cool&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+&lt;p&gt;我系统10.10的,安装的时候brew坏了,卸了从新安装的&lt;/p&gt;
 
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;col 3 is&lt;/td&gt;
-&lt;td&gt;right-aligned&lt;/td&gt;
-&lt;td&gt;$1600&lt;/td&gt;
-&lt;/tr&gt;
+&lt;p&gt;brew安装&lt;/p&gt;
 
-&lt;tr&gt;
-&lt;td&gt;col 2 is&lt;/td&gt;
-&lt;td&gt;centered&lt;/td&gt;
-&lt;td&gt;$12&lt;/td&gt;
-&lt;/tr&gt;
+&lt;pre&gt;&lt;code&gt;/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;tr&gt;
-&lt;td&gt;zebra stripes&lt;/td&gt;
-&lt;td&gt;are neat&lt;/td&gt;
-&lt;td&gt;$1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>helloworld</title>
-      <link>http://dongjian.github.io/helloworld/</link>
-      <pubDate>Wed, 23 Mar 2016 20:17:39 +0800</pubDate>
-      
-      <guid>http://dongjian.github.io/helloworld/</guid>
-      <description>
+&lt;p&gt;brew 卸载&lt;/p&gt;
 
-&lt;p&gt;Hugo Themes
-(Hu)go Template Primer
-About Hugo
-Getting Started with Hugo
-tutorials
-Sun, Sep 28, 2014
-Creating a New Theme
-Introduction&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I’ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won’t cover using CSS to style your theme.&lt;/p&gt;
+&lt;p&gt;windows 用户&lt;/p&gt;
 
-&lt;p&gt;We’ll start with creating a new site with a very basic template. Then we’ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p&gt;
+&lt;p&gt;去官网下载hugo.exe使用就行了&lt;/p&gt;
 
-&lt;p&gt;In this tutorial, commands that you enter will start with the “$” prompt. The output will follow. Lines that start with “#” are comments that I’ve added to explain a point. When I show updates to a file, the “:wq” on the last line means to save the file.&lt;/p&gt;
+&lt;h3 id=&#34;新建项目:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;新建项目&lt;/h3&gt;
 
-&lt;p&gt;Here’s an example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new site /建站文件夹
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;this-is-a-comment-echo-this-is-a-command-this-is-a-command-edit-the-file-vi-foo-md-date-2014-09-28-title-creating-a-new-theme-bah-and-humbug-wq-show-it-cat-foo-md-date-2014-09-28-title-creating-a-new-theme-bah-and-humbug:b0550240c0a1b7c12779ff8220a94c0f&#34;&gt;this is a comment $ echo this is a command this is a command ## edit the file $vi foo.md +++ date = &amp;ldquo;2014-09-28&amp;rdquo; title = &amp;ldquo;creating a new theme&amp;rdquo; +++ bah and humbug :wq ## show it $ cat foo.md +++ date = &amp;ldquo;2014-09-28&amp;rdquo; title = &amp;ldquo;creating a new theme&amp;rdquo; +++ bah and humbug $&lt;/h2&gt;
+&lt;p&gt;建完以后文件夹结构如下&lt;/p&gt;
 
-&lt;p&gt;Some Definitions&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tree -a
+.
+|-- archetypes
+|-- config.toml
+|-- content
+|-- data
+|-- layouts
+`-- static
+5 directories, 1 file
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;There are a few concepts that you need to understand before creating a theme.&lt;/p&gt;
+&lt;p&gt;tree 是个挺好的工具 安装方法&lt;/p&gt;
 
-&lt;p&gt;Skins
-Skins are the files responsible for the look and feel of your site. It’s the CSS that controls colors and fonts, it’s the Javascript that determines actions and reactions. It’s also the rules that Hugo uses to transform your content into the HTML that the site will serve to visitors.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install tree
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You have two ways to create a skin. The simplest way is to create it in the layouts/ directory. If you do, then you don’t have to worry about configuring Hugo to recognize it. The first place that Hugo will look for rules and files is in the layouts/ directory so it will always find the skin.&lt;/p&gt;
+&lt;h3 id=&#34;写文章:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;写文章&lt;/h3&gt;
 
-&lt;p&gt;Your second choice is to create it in a sub-directory of the themes/ directory. If you do, then you must always tell Hugo where to search for the skin. It’s extra work, though, so why bother with it?&lt;/p&gt;
+&lt;p&gt;hugo新建文章&lt;/p&gt;
 
-&lt;p&gt;The difference between creating a skin in layouts/ and creating it in themes/ is very subtle. A skin in layouts/ can’t be customized without updating the templates and static files that it is built from. A skin created in themes/, on the other hand, can be and that makes it easier for other people to use it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new post/hello.md
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The rest of this tutorial will call a skin created in the themes/ directory a theme.&lt;/p&gt;
+&lt;p&gt;然后在./content/post 里面会多一个文件,内容这样的&lt;/p&gt;
 
-&lt;p&gt;Note that you can use this tutorial to create a skin in the layouts/ directory if you wish to. The main difference will be that you won’t need to update the site’s configuration file to use a theme.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;+++
+date = &amp;quot;2016-03-25T00:33:03+08:00&amp;quot;
+description = &amp;quot;&amp;quot;
+title = &amp;quot;hello&amp;quot;
+draft = true
++++
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The Home Page
-The home page, or landing page, is the first page that many visitors to a site see. It is the index.html file in the root directory of the web site. Since Hugo writes files to the public/ directory, our home page is public/index.html.&lt;/p&gt;
+&lt;p&gt;draft表示是草稿,不会渲染.把这一行删掉就好了&lt;/p&gt;
 
-&lt;p&gt;Site Configuration File
-When Hugo runs, it looks for a configuration file that contains settings that override default values for the entire site. The file can use TOML, YAML, or JSON. I prefer to use TOML for my configuration files. If you prefer to use JSON or YAML, you’ll need to translate my examples. You’ll also need to change the name of the file since Hugo uses the extension to determine how to process it.&lt;/p&gt;
+&lt;h3 id=&#34;选主题:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;选主题&lt;/h3&gt;
 
-&lt;p&gt;Hugo translates Markdown files into HTML. By default, Hugo expects to find Markdown files in your content/ directory and template files in your themes/ directory. It will create HTML files in your public/ directory. You can change this by specifying alternate locations in the configuration file.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Content
-Content is stored in text files that contain two sections. The first section is the “front matter,” which is the meta-information on the content. The second section contains Markdown that will be converted to HTML.&lt;/p&gt;
+&lt;p&gt;这里有各种各样的皮肤可以选,我选了比较简洁的hugo_theme_beg&lt;/p&gt;
 
-&lt;p&gt;Front Matter&lt;/p&gt;
+&lt;p&gt;安装方法
+在项目里面建一个themes的目录&lt;/p&gt;
 
-&lt;p&gt;The front matter is information about the content. Like the configuration file, it can be written in TOML, YAML, or JSON. Unlike the configuration file, Hugo doesn’t use the file’s extension to know the format. It looks for markers to signal the type. TOML is surrounded by “+++”, YAML by “&amp;mdash;”, and JSON is enclosed in curly braces. I prefer to use TOML, so you’ll need to translate my examples if you prefer YAML or JSON.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir themes &amp;amp;&amp;amp; cd themes
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The information in the front matter is passed into the template before the content is rendered into HTML.&lt;/p&gt;
+&lt;p&gt;然后把你喜欢的主题clone下来&lt;/p&gt;
 
-&lt;p&gt;Markdown&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone git@github.com:dim0627/hugo_theme_beg.git
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Content is written in Markdown which makes it easier to create the content. Hugo runs the content through a Markdown engine to create the HTML which will be written to the output file.&lt;/p&gt;
+&lt;h3 id=&#34;用hugo跑服务看下效果:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;用hugo跑服务看下效果&lt;/h3&gt;
 
-&lt;p&gt;Template Files
-Hugo uses template files to render content into HTML. Template files are a bridge between the content and presentation. Rules in the template define what content is published, where it’s published to, and how it will rendered to the HTML file. The template guides the presentation by specifying the style to use.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo server -w --theme=hugo_theme_beg
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;There are three types of templates: single, list, and partial. Each type takes a bit of content as input and transforms it based on the commands in the template.&lt;/p&gt;
+&lt;p&gt;打开浏览器访问 &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Hugo uses its knowledge of the content to find the template file used to render the content. If it can’t find a template that is an exact match for the content, it will shift up a level and search from there. It will continue to do so until it finds a matching template or runs out of templates to try. If it can’t find a template, it will use the default template for the site.&lt;/p&gt;
+&lt;p&gt;就能看到效果了.&lt;/p&gt;
 
-&lt;p&gt;Please note that you can use the front matter to influence Hugo’s choice of templates.&lt;/p&gt;
+&lt;h3 id=&#34;上传至github-pages:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;上传至github pages&lt;/h3&gt;
 
-&lt;p&gt;Single Template&lt;/p&gt;
+&lt;p&gt;运行&lt;/p&gt;
 
-&lt;p&gt;A single template is used to render a single piece of content. For example, an article or post would be a single piece of content and use a single template.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo --theme=hugo_theme_beg
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;List Template&lt;/p&gt;
+&lt;p&gt;hugo会自动把渲染好的静态页面放在public下面&lt;/p&gt;
 
-&lt;p&gt;A list template renders a group of related content. That could be a summary of recent postings or all articles in a category. List templates can contain multiple groups.&lt;/p&gt;
+&lt;p&gt;在github上建一个项目,命名方式: 用户名.github.io
+然后把public里面的内容push去就可以了
+以后每次修改重新运行上面命令,然后再用git同步即可&lt;/p&gt;
 
-&lt;p&gt;The homepage template is a special type of list template. Hugo assumes that the home page of your site will act as the portal for the rest of the content in the site.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不会用git的朋友,可以下载一个sourceTree,在github上练习下,无非就是pull-&amp;gt;add/remove-&amp;gt;commit-&amp;gt;push&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Partial Template&lt;/p&gt;
+&lt;p&gt;项目根目录下的config.toml记得修改baseURL&lt;/p&gt;
 
-&lt;p&gt;A partial template is a template that can be included in other templates. Partial templates must be called using the “partial” template command. They are very handy for rolling up common behavior. For example, your site may have a banner that all pages use. Instead of copying the text of the banner into every single and list template, you could create a partial with the banner in it. That way if you decide to change the banner, you only have to change the partial template.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;baseURL=                    &amp;quot;http://用户名.github.io/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Create a New Site&lt;/p&gt;
+&lt;h3 id=&#34;其他:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;其他&lt;/h3&gt;
 
-&lt;p&gt;Let’s use Hugo to create a new web site. I’m a Mac user, so I’ll create mine in my home directory, in the Sites folder. If you’re using Linux, you might have to create the folder first.&lt;/p&gt;
+&lt;p&gt;disqus 支持
+只要在config.toml里面添加&lt;/p&gt;
 
-&lt;p&gt;The “new site” command will create a skeleton of a site. It will give you the basic directory structure and a useable configuration file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;disqusShortname = &amp;quot;你的disqus用户名&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;$ hugo new site ~/Sites/zafta $ cd ~/Sites/zafta $ ls -l total 8 drwxr-xr-x 7 quoha staff 238 Sep 29 16:49 . drwxr-xr-x 3 quoha staff 102 Sep 29 16:49 .. drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 archetypes -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 82 Sep 29 16:49 config.toml drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 content drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 layouts drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 static $
-Take a look in the content/ directory to confirm that it is empty.&lt;/p&gt;
+&lt;p&gt;就可以了,但是disqus被墙了,国内用不了,我就换成了中国的&lt;code&gt;多说&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;The other directories (archetypes/, layouts/, and static/) are used when customizing a theme. That’s a topic for a different tutorial, so please ignore them for now.&lt;/p&gt;
+&lt;p&gt;把themes/你选的主题/layouts/_default/single.html 里面disqus的换成下面的就行了&lt;/p&gt;
 
-&lt;p&gt;Generate the HTML For the New Site
-Running the hugo command with no options will read all the available content and generate the HTML files. It will also copy all static files (that’s everything that’s not content). Since we have an empty site, it won’t do much, but it will do it very quickly.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- 多说评论框 start --&amp;gt;
+&amp;lt;div class=&amp;quot;ds-thread&amp;quot; data-thread-key=&amp;quot;{{ .URL }}&amp;quot; data-title=&amp;quot;{{ .Title }}&amp;quot; data-url=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;!-- 多说评论框 end --&amp;gt;
 
-&lt;p&gt;$ hugo &amp;ndash;verbose INFO: 2014/09/29 Using config file: config.toml INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/ WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html] WARN: 2014/09/29 Unable to locate layout: [404.html] 0 draft content 0 future content 0 pages created 0 tags created 0 categories created in 2 ms $
-The “&amp;ndash;verbose” flag gives extra information that will be helpful when we build the template. Every line of the output that starts with “INFO:” or “WARN:” is present because we used that flag. The lines that start with “WARN:” are warning messages. We’ll go over them later.&lt;/p&gt;
+&amp;lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    var duoshuoQuery = {short_name:&amp;quot;{{.Site.Params.duoshuoShortname}}&amp;quot;};
 
-&lt;p&gt;We can verify that the command worked by looking at the directory again.&lt;/p&gt;
-
-&lt;p&gt;$ ls -l total 8 drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 archetypes -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 82 Sep 29 16:49 config.toml drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 content drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 layouts drwxr-xr-x 4 quoha staff 136 Sep 29 17:02 public drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 static $
-See that new public/ directory? Hugo placed all generated content there. When you’re ready to publish your web site, that’s the place to start. For now, though, let’s just confirm that we have what we’d expect from a site with no content.&lt;/p&gt;
-
-&lt;p&gt;$ ls -l public total 16 -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 416 Sep 29 17:02 index.xml -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 262 Sep 29 17:02 sitemap.xml $
-Hugo created two XML files, which is standard, but there are no HTML files.&lt;/p&gt;
-
-&lt;p&gt;Test the New Site
-Verify that you can run the built-in web server. It will dramatically shorten your development cycle if you do. Start it by running the “server” command. If it is successful, you will see output similar to the following:&lt;/p&gt;
-
-&lt;p&gt;$ hugo server &amp;ndash;verbose INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/ WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html] WARN: 2014/09/29 Unable to locate layout: [404.html] 0 draft content 0 future content 0 pages created 0 tags created 0 categories created in 2 ms Serving pages from /Users/quoha/Sites/zafta/public Web Server is available at &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt; Press Ctrl+C to stop
-Connect to the listed URL (it’s on the line that starts with “Web Server”). If everything is working correctly, you should get a page that shows the following:&lt;/p&gt;
-
-&lt;p&gt;index.xml sitemap.xml
-That’s a listing of your public/ directory. Hugo didn’t create a home page because our site has no content. When there’s no index.html file in a directory, the server lists the files in the directory, which is what you should see in your browser.&lt;/p&gt;
-
-&lt;p&gt;Let’s go back and look at those warnings again.&lt;/p&gt;
-
-&lt;p&gt;WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html] WARN: 2014/09/29 Unable to locate layout: [404.html]
-That second warning is easier to explain. We haven’t created a template to be used to generate “page not found errors.” The 404 message is a topic for a separate tutorial.&lt;/p&gt;
-
-&lt;p&gt;Now for the first warning. It is for the home page. You can tell because the first layout that it looked for was “index.html.” That’s only used by the home page.&lt;/p&gt;
-
-&lt;p&gt;I like that the verbose flag causes Hugo to list the files that it’s searching for. For the home page, they are index.html, _default/list.html, and _default/single.html. There are some rules that we’ll cover later that explain the names and paths. For now, just remember that Hugo couldn’t find a template for the home page and it told you so.&lt;/p&gt;
-
-&lt;p&gt;At this point, you’ve got a working installation and site that we can build upon. All that’s left is to add some content and a theme to display it.&lt;/p&gt;
-
-&lt;p&gt;Create a New Theme&lt;/p&gt;
-
-&lt;p&gt;Hugo doesn’t ship with a default theme. There are a few available (I counted a dozen when I first installed Hugo) and Hugo comes with a command to create new themes.&lt;/p&gt;
-
-&lt;p&gt;We’re going to create a new theme called “zafta.” Since the goal of this tutorial is to show you how to fill out the files to pull in your content, the theme will not contain any CSS. In other words, ugly but functional.&lt;/p&gt;
-
-&lt;p&gt;All themes have opinions on content and layout. For example, Zafta uses “post” over “blog”. Strong opinions make for simpler templates but differing opinions make it tougher to use themes. When you build a theme, consider using the terms that other themes do.&lt;/p&gt;
-
-&lt;p&gt;Create a Skeleton
-Use the hugo “new” command to create the skeleton of a theme. This creates the directory structure and places empty files for you to fill out.&lt;/p&gt;
-
-&lt;p&gt;$ hugo new theme zafta $ ls -l total 8 drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 archetypes -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 82 Sep 29 16:49 config.toml drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 content drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 layouts drwxr-xr-x 4 quoha staff 136 Sep 29 17:02 public drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 static drwxr-xr-x 3 quoha staff 102 Sep 29 17:31 themes $ find themes -type f | xargs ls -l -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 1081 Sep 29 17:31 themes/zafta/LICENSE.md -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/archetypes/default.md -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/_default/list.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/_default/single.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/index.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/partials/footer.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/partials/header.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 93 Sep 29 17:31 themes/zafta/theme.toml $
-The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.&lt;/p&gt;
-
-&lt;p&gt;Please take a minute to fill out the theme.toml and LICENSE.md files. They’re optional, but if you’re going to be distributing your theme, it tells the world who to praise (or blame). It’s also nice to declare the license so that people will know how they can use the theme.&lt;/p&gt;
-
-&lt;p&gt;$ vi themes/zafta/theme.toml author = &amp;ldquo;michael d henderson&amp;rdquo; description = &amp;ldquo;a minimal working template&amp;rdquo; license = &amp;ldquo;MIT&amp;rdquo; name = &amp;ldquo;zafta&amp;rdquo; source_repo = &amp;ldquo;&amp;rdquo; tags = [&amp;ldquo;tags&amp;rdquo;, &amp;ldquo;categories&amp;rdquo;] :wq ## also edit themes/zafta/LICENSE.md and change ## the bit that says &amp;ldquo;YOUR_NAME_HERE&amp;rdquo;
-Note that the the skeleton’s template files are empty. Don’t worry, we’ll be changing that shortly.&lt;/p&gt;
-
-&lt;p&gt;$ find themes/zafta -name &amp;lsquo;*.html&amp;rsquo; | xargs ls -l -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/_default/list.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/_default/single.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/index.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/partials/footer.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/partials/header.html $
-Update the Configuration File to Use the Theme
-Now that we’ve got a theme to work with, it’s a good idea to add the theme name to the configuration file. This is optional, because you can always add “-t zafta” on all your commands. I like to put it the configuration file because I like shorter command lines. If you don’t put it in the configuration file or specify it on the command line, you won’t use the template that you’re expecting to.&lt;/p&gt;
-
-&lt;p&gt;Edit the file to add the theme, add a title for the site, and specify that all of our content will use the TOML format.&lt;/p&gt;
-
-&lt;p&gt;$ vi config.toml theme = &amp;ldquo;zafta&amp;rdquo; baseurl = &amp;ldquo;&amp;rdquo; languageCode = &amp;ldquo;en-us&amp;rdquo; title = &amp;ldquo;zafta - totally refreshing&amp;rdquo; MetaDataFormat = &amp;ldquo;toml&amp;rdquo; :wq $
-Generate the Site
-Now that we have an empty theme, let’s generate the site again.&lt;/p&gt;
-
-&lt;p&gt;$ hugo &amp;ndash;verbose INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/ WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html] 0 draft content 0 future content 0 pages created 0 tags created 0 categories created in 2 ms $
-Did you notice that the output is different? The warning message for the home page has disappeared and we have an additional information line saying that Hugo is syncing from the theme’s directory.&lt;/p&gt;
-
-&lt;p&gt;Let’s check the public/ directory to see what Hugo’s created.&lt;/p&gt;
-
-&lt;p&gt;$ ls -l public total 16 drwxr-xr-x 2 quoha staff 68 Sep 29 17:56 css -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:56 index.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 407 Sep 29 17:56 index.xml drwxr-xr-x 2 quoha staff 68 Sep 29 17:56 js -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 243 Sep 29 17:56 sitemap.xml $
-Notice four things:&lt;/p&gt;
-
-&lt;p&gt;Hugo created a home page. This is the file public/index.html.
-Hugo created a css/ directory.
-Hugo created a js/ directory.
-Hugo claimed that it created 0 pages. It created a file and copied over static files, but didn’t create any pages. That’s because it considers a “page” to be a file created directly from a content file. It doesn’t count things like the index.html files that it creates automatically.
-The Home Page&lt;/p&gt;
-
-&lt;p&gt;Hugo supports many different types of templates. The home page is special because it gets its own type of template and its own template file. The file, layouts/index.html, is used to generate the HTML for the home page. The Hugo documentation says that this is the only required template, but that depends. Hugo’s warning message shows that it looks for three different templates:&lt;/p&gt;
-
-&lt;p&gt;WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
-If it can’t find any of these, it completely skips creating the home page. We noticed that when we built the site without having a theme installed.&lt;/p&gt;
-
-&lt;p&gt;When Hugo created our theme, it created an empty home page template. Now, when we build the site, Hugo finds the template and uses it to generate the HTML for the home page. Since the template file is empty, the HTML file is empty, too. If the template had any rules in it, then Hugo would have used them to generate the home page.&lt;/p&gt;
-
-&lt;p&gt;$ find . -name index.html | xargs ls -l -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 20:21 ./public/index.html -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 0 Sep 29 17:31 ./themes/zafta/layouts/index.html $
-The Magic of Static&lt;/p&gt;
-
-&lt;p&gt;Hugo does two things when generating the site. It uses templates to transform content into HTML and it copies static files into the site. Unlike content, static files are not transformed. They are copied exactly as they are.&lt;/p&gt;
-
-&lt;p&gt;Hugo assumes that your site will use both CSS and JavaScript, so it creates directories in your theme to hold them. Remember opinions? Well, Hugo’s opinion is that you’ll store your CSS in a directory named css/ and your JavaScript in a directory named js/. If you don’t like that, you can change the directory names in your theme directory or even delete them completely. Hugo’s nice enough to offer its opinion, then behave nicely if you disagree.&lt;/p&gt;
-
-&lt;p&gt;$ find themes/zafta -type d | xargs ls -ld drwxr-xr-x 7 quoha staff 238 Sep 29 17:38 themes/zafta drwxr-xr-x 3 quoha staff 102 Sep 29 17:31 themes/zafta/archetypes drwxr-xr-x 5 quoha staff 170 Sep 29 17:31 themes/zafta/layouts drwxr-xr-x 4 quoha staff 136 Sep 29 17:31 themes/zafta/layouts/_default drwxr-xr-x 4 quoha staff 136 Sep 29 17:31 themes/zafta/layouts/partials drwxr-xr-x 4 quoha staff 136 Sep 29 17:31 themes/zafta/static drwxr-xr-x 2 quoha staff 68 Sep 29 17:31 themes/zafta/static/css drwxr-xr-x 2 quoha staff 68 Sep 29 17:31 themes/zafta/static/js $
-The Theme Development Cycle&lt;/p&gt;
-
-&lt;p&gt;When you’re working on a theme, you will make changes in the theme’s directory, rebuild the site, and check your changes in the browser. Hugo makes this very easy:&lt;/p&gt;
-
-&lt;p&gt;Purge the public/ directory.
-Run the built in web server in watch mode.
-Open your site in a browser.
-Update the theme.
-Glance at your browser window to see changes.
-Return to step 4.
-I’ll throw in one more opinion: never work on a theme on a live site. Always work on a copy of your site. Make changes to your theme, test them, then copy them up to your site. For added safety, use a tool like Git to keep a revision history of your content and your theme. Believe me when I say that it is too easy to lose both your mind and your changes.&lt;/p&gt;
-
-&lt;p&gt;Check the main Hugo site for information on using Git with Hugo.&lt;/p&gt;
-
-&lt;p&gt;Purge the public/ Directory
-When generating the site, Hugo will create new files and update existing ones in the public/ directory. It will not delete files that are no longer used. For example, files that were created in the wrong directory or with the wrong title will remain. If you leave them, you might get confused by them later. I recommend cleaning out your site prior to generating it.&lt;/p&gt;
-
-&lt;p&gt;Note: If you’re building on an SSD, you should ignore this. Churning on a SSD can be costly.&lt;/p&gt;
-
-&lt;p&gt;Hugo’s Watch Option
-Hugo’s “&amp;ndash;watch” option will monitor the content/ and your theme directories for changes and rebuild the site automatically.&lt;/p&gt;
-
-&lt;p&gt;Live Reload
-Hugo’s built in web server supports live reload. As pages are saved on the server, the browser is told to refresh the page. Usually, this happens faster than you can say, “Wow, that’s totally amazing.”&lt;/p&gt;
-
-&lt;p&gt;Development Commands
-Use the following commands as the basis for your workflow.&lt;/p&gt;
-
-&lt;h2 id=&#34;purge-old-files-hugo-will-recreate-the-public-directory-rm-rf-public-run-hugo-in-watch-mode-hugo-server-watch-verbose:b0550240c0a1b7c12779ff8220a94c0f&#34;&gt;purge old files. hugo will recreate the public directory. ## $ rm -rf public ## ## run hugo in watch mode ## $ hugo server &amp;ndash;watch &amp;ndash;verbose&lt;/h2&gt;
-
-&lt;p&gt;Here’s sample output showing Hugo detecting a change to the template for the home page. Once generated, the web browser automatically reloaded the page. I’ve said this before, it’s amazing.&lt;/p&gt;
-
-&lt;p&gt;$ rm -rf public $ hugo server &amp;ndash;watch &amp;ndash;verbose INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/ WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html] 0 draft content 0 future content 0 pages created 0 tags created 0 categories created in 2 ms Watching for changes in /Users/quoha/Sites/zafta/content Serving pages from /Users/quoha/Sites/zafta/public Web Server is available at &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt; Press Ctrl+C to stop INFO: 2014/09/29 File System Event: [&amp;ldquo;/Users/quoha/Sites/zafta/themes/zafta/layouts/index.html&amp;rdquo;: MODIFY|ATTRIB] Change detected, rebuilding site WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html] 0 draft content 0 future content 0 pages created 0 tags created 0 categories created in 1 ms
-Update the Home Page Template&lt;/p&gt;
-
-&lt;p&gt;The home page is one of a few special pages that Hugo creates automatically. As mentioned earlier, it looks for one of three files in the theme’s layout/ directory:&lt;/p&gt;
-
-&lt;p&gt;index.html
-_default/list.html
-_default/single.html
-We could update one of the default templates, but a good design decision is to update the most specific template available. That’s not a hard and fast rule (in fact, we’ll break it a few times in this tutorial), but it is a good generalization.&lt;/p&gt;
-
-&lt;p&gt;Make a Static Home Page
-Right now, that page is empty because we don’t have any content and we don’t have any logic in the template. Let’s change that by adding some text to the template.&lt;/p&gt;
-
-&lt;dl&gt;
-&lt;dt&gt;hugo says hello!&lt;/dt&gt;
-&lt;/dl&gt;
-
-&lt;dl&gt;
-&lt;dt&gt;hugo says hello!&lt;/dt&gt;
-&lt;/dl&gt;
-
-&lt;dl&gt;
-&lt;dt&gt;hugo says hello!&lt;/dt&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;:wq $
-Build the web site and then verify the results.&lt;/p&gt;
-
-&lt;p&gt;$ hugo &amp;ndash;verbose INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/ WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html] 0 draft content 0 future content 0 pages created 0 tags created 0 categories created in 2 ms $ find public -type f -name &amp;lsquo;*.html&amp;rsquo; | xargs ls -l -rw-r&amp;ndash;r&amp;ndash; 1 quoha staff 78 Sep 29 21:26 public/index.html $ cat public/index.html
-hugo says hello!&lt;/p&gt;
-
-&lt;p&gt;Live Reload&lt;/p&gt;
-
-&lt;p&gt;Note: If you’re running the server with the &amp;ndash;watch option, you’ll see different content in the file:&lt;/p&gt;
-
-&lt;p&gt;$ cat public/index.html
-hugo says hello!&lt;/p&gt;
+    (function() {
+     var ds = document.createElement(&#39;script&#39;);
+     ds.type = &#39;text/javascript&#39;;ds.async = true;
+     ds.src = (document.location.protocol == &#39;https:&#39; ? &#39;https:&#39; : &#39;http:&#39;) + &#39;//static.duoshuo.com/embed.js&#39;;
+     ds.charset = &#39;UTF-8&#39;;
+     (document.getElementsByTagName(&#39;head&#39;)[0]
+      || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(ds);
+     })();
+    &amp;lt;/script&amp;gt;
+&amp;lt;!-- 多说公共JS代码 end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
