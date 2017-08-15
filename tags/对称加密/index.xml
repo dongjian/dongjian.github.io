@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on dongjian&#39;s blog</title>
-    <link>http://dongjian.github.io/categories/development/</link>
-    <description>Recent content in Development on dongjian&#39;s blog</description>
+    <title>对称加密 on dongjian&#39;s blog</title>
+    <link>http://dongjian.github.io/tags/%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86/</link>
+    <description>Recent content in 对称加密 on dongjian&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <managingEditor>381423609@qq.com (dongjian)</managingEditor>
     <webMaster>381423609@qq.com (dongjian)</webMaster>
     <lastBuildDate>Tue, 15 Aug 2017 20:10:09 +0800</lastBuildDate>
-    <atom:link href="http://dongjian.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://dongjian.github.io/tags/%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>燕洵家书,谍纸天眼与数据加密</title>
@@ -134,184 +134,6 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;原理与现在的数字签名相同&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>如何快速搭建个人博客hugo &#43; github pages</title>
-      <link>http://dongjian.github.io/post/howtobuildablog/</link>
-      <pubDate>Thu, 24 Mar 2016 20:02:12 +0800</pubDate>
-      <author>381423609@qq.com (dongjian)</author>
-      <guid>http://dongjian.github.io/post/howtobuildablog/</guid>
-      <description>
-
-&lt;h2 id=&#34;为什么搭建自己的blog:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;为什么搭建自己的blog&lt;/h2&gt;
-
-&lt;p&gt;1.不论是新浪还是qq空间我都买不起会员,没面子&lt;/p&gt;
-
-&lt;p&gt;2.没广告,能自定义,而且一下子就有了一种我能修电脑的高贵气质&lt;/p&gt;
-
-&lt;h2 id=&#34;hugo:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;hugo&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34;&gt;https://gohugo.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;hugo是go语言写的,其实用起来跟golang没一点关系,只用到编译好的程序.
-它是个生态静态页面的工具.能把md文件渲染成网页.还自带了http sever,有 watch 功能.生成速度很快,watch反映也很快.&lt;/p&gt;
-
-&lt;p&gt;hugo生成静态网站的好处明显,不用数据库,也不需要你写逻辑,啥玩意儿你也不用管,写文章就完了,写完了就用工具调一条命令,啪!,网站好了.&lt;/p&gt;
-
-&lt;h2 id=&#34;github-pages:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;github pages&lt;/h2&gt;
-
-&lt;p&gt;免费,无限流量,国内外都能上,速度还快.
-怕就怕哪天有司机用github pages 飙车,一下被墙了就不好使了
-在此呼吁大家遵守交通规则,文明驾驶.&lt;/p&gt;
-
-&lt;h2 id=&#34;如何使用:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;如何使用&lt;/h2&gt;
-
-&lt;h3 id=&#34;安装hugo:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;安装hugo&lt;/h3&gt;
-
-&lt;p&gt;mac 用户&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;brew update &amp;amp;&amp;amp; brew install hugo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;我系统10.10的,安装的时候brew坏了,卸了从新安装的&lt;/p&gt;
-
-&lt;p&gt;brew安装&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;brew 卸载&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;windows 用户&lt;/p&gt;
-
-&lt;p&gt;去官网下载hugo.exe使用就行了&lt;/p&gt;
-
-&lt;h3 id=&#34;新建项目:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;新建项目&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new site /建站文件夹
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;建完以后文件夹结构如下&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tree -a
-.
-|-- archetypes
-|-- config.toml
-|-- content
-|-- data
-|-- layouts
-`-- static
-5 directories, 1 file
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;tree 是个挺好的工具 安装方法&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;brew install tree
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;写文章:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;写文章&lt;/h3&gt;
-
-&lt;p&gt;hugo新建文章&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new post/hello.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后在./content/post 里面会多一个文件,内容这样的&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;+++
-date = &amp;quot;2016-03-25T00:33:03+08:00&amp;quot;
-description = &amp;quot;&amp;quot;
-title = &amp;quot;hello&amp;quot;
-draft = true
-+++
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;draft表示是草稿,不会渲染.把这一行删掉就好了&lt;/p&gt;
-
-&lt;h3 id=&#34;选主题:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;选主题&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这里有各种各样的皮肤可以选,我选了比较简洁的hugo_theme_beg&lt;/p&gt;
-
-&lt;p&gt;安装方法
-在项目里面建一个themes的目录&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mkdir themes &amp;amp;&amp;amp; cd themes
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后把你喜欢的主题clone下来&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone git@github.com:dim0627/hugo_theme_beg.git
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;用hugo跑服务看下效果:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;用hugo跑服务看下效果&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo server -w --theme=hugo_theme_beg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;打开浏览器访问 &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;就能看到效果了.&lt;/p&gt;
-
-&lt;h3 id=&#34;上传至github-pages:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;上传至github pages&lt;/h3&gt;
-
-&lt;p&gt;运行&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo --theme=hugo_theme_beg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;hugo会自动把渲染好的静态页面放在public下面&lt;/p&gt;
-
-&lt;p&gt;在github上建一个项目,命名方式: 用户名.github.io
-然后把public里面的内容push去就可以了
-以后每次修改重新运行上面命令,然后再用git同步即可&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;不会用git的朋友,可以下载一个sourceTree,在github上练习下,无非就是pull-&amp;gt;add/remove-&amp;gt;commit-&amp;gt;push&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;项目根目录下的config.toml记得修改baseURL&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;baseURL=                    &amp;quot;http://用户名.github.io/&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;其他:f908b47f078c0fbac5a1c0241a7003e7&#34;&gt;其他&lt;/h3&gt;
-
-&lt;p&gt;disqus 支持
-只要在config.toml里面添加&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;disqusShortname = &amp;quot;你的disqus用户名&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;就可以了,但是disqus被墙了,国内用不了,我就换成了中国的&lt;code&gt;多说&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;把themes/你选的主题/layouts/_default/single.html 里面disqus的换成下面的就行了&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;!-- 多说评论框 start --&amp;gt;
-&amp;lt;div class=&amp;quot;ds-thread&amp;quot; data-thread-key=&amp;quot;{{ .URL }}&amp;quot; data-title=&amp;quot;{{ .Title }}&amp;quot; data-url=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-&amp;lt;!-- 多说评论框 end --&amp;gt;
-
-&amp;lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&amp;gt;
-&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
-    var duoshuoQuery = {short_name:&amp;quot;{{.Site.Params.duoshuoShortname}}&amp;quot;};
-
-    (function() {
-     var ds = document.createElement(&#39;script&#39;);
-     ds.type = &#39;text/javascript&#39;;ds.async = true;
-     ds.src = (document.location.protocol == &#39;https:&#39; ? &#39;https:&#39; : &#39;http:&#39;) + &#39;//static.duoshuo.com/embed.js&#39;;
-     ds.charset = &#39;UTF-8&#39;;
-     (document.getElementsByTagName(&#39;head&#39;)[0]
-      || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(ds);
-     })();
-    &amp;lt;/script&amp;gt;
-&amp;lt;!-- 多说公共JS代码 end --&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
