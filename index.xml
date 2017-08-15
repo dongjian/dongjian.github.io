@@ -8,8 +8,134 @@
     <language>zh-CN</language>
     <managingEditor>381423609@qq.com (dongjian)</managingEditor>
     <webMaster>381423609@qq.com (dongjian)</webMaster>
-    <lastBuildDate>Thu, 24 Mar 2016 20:02:12 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Aug 2017 20:10:09 +0800</lastBuildDate>
     <atom:link href="http://dongjian.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>燕洵家书,谍纸天眼与数据加密</title>
+      <link>http://dongjian.github.io/post/jiami/</link>
+      <pubDate>Tue, 15 Aug 2017 20:10:09 +0800</pubDate>
+      <author>381423609@qq.com (dongjian)</author>
+      <guid>http://dongjian.github.io/post/jiami/</guid>
+      <description>
+
+&lt;h2 id=&#34;对称加密:39b4bb88524406a59136c759ec09f0f1&#34;&gt;对称加密&lt;/h2&gt;
+
+&lt;p&gt;信息通讯中,为了保证数据不被第三方窃取,加密 必不可少.战争年代谍报中运用最多.在非对称加密出现之前大部分数据都是通过对称加密来时间的
+例如,将26个字母约定好变一个顺序.比如讲 e 和 o 替换
+那&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;I have a dog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;经加密后就变为&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;I havo a deg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解密的时候再把 o 和 e 替换回来&lt;/p&gt;
+
+&lt;p&gt;那替换的规则就是用来解密和加密的 key.
+这种 解密加密 用的是同一把key 就是对称加密.
+再举几个对称加密的例子
+比如&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-&amp;gt;地振高冈一派西山千古秀
+&amp;lt;-门朝大海三河合水万年流
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;-&amp;gt;天王盖地虎
+&amp;lt;-宝塔镇河妖
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;提前约定好的暗号.也是对称加密.加密规则双方都知道.别人不知道 来达到加密的效果&lt;/p&gt;
+
+&lt;h2 id=&#34;对称加密的缺点:39b4bb88524406a59136c759ec09f0f1&#34;&gt;对称加密的缺点&lt;/h2&gt;
+
+&lt;p&gt;对称加密的最大缺点就是:&lt;/p&gt;
+
+&lt;h3 id=&#34;1-加密规则很容易泄露-因为传递加密的key的时候是没有加密的:39b4bb88524406a59136c759ec09f0f1&#34;&gt;&lt;code&gt;1&lt;/code&gt;.加密规则很容易泄露.因为传递加密的key的时候是没有加密的&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;暗号在口口传播过程中泄露很正常.鹿鼎记后期 康熙都知道喊 地振高冈.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;2-经过大量数据推算-很有可能把key推算出来:39b4bb88524406a59136c759ec09f0f1&#34;&gt;&lt;code&gt;2&lt;/code&gt;.经过大量数据推算,很有可能把key推算出来&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;前面 字母替换的 加密方式 . 在战争时期真的有用过的(忘记哪个老师讲过的),最后被专门搞密码的人破解掉了.破解方式也很简单.他们通过计算每个字母在文章中出现的频率.基本就得出了key. 比如e在单词中出现的次数是最多的.那密文中出现次数最多的字母不出意外就是 e 或者 空格之类.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;燕洵全家是被对称加密害死的:39b4bb88524406a59136c759ec09f0f1&#34;&gt;燕洵全家是被对称加密害死的&lt;/h2&gt;
+
+&lt;p&gt;燕洵回家书的时候加密方式是&lt;code&gt;笔迹&lt;/code&gt;.中间被大梁谍者调换一次.宇文玥又调换一次.最后到了燕世城那里 , 东方说 那都是假的 , 看我这里的 .
+燕世城看了 东方 那里的家书 认为是真的 . 因为&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;①&lt;code&gt;笔迹&lt;/code&gt;对的上&lt;/p&gt;
+
+&lt;p&gt;②有燕洵和燕世城订好的&lt;code&gt;暗号&lt;/code&gt;出现 (如果说到派医生到燕北给燕世城看病,就是燕洵离死不远了).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;燕世城信了假家书 . 直接进京城找皇上 . 然后全家被杀 .&lt;/p&gt;
+
+&lt;p&gt;这就是对称加密的弊端&lt;code&gt;1&lt;/code&gt; &lt;code&gt;2&lt;/code&gt;. 笔迹可以模仿 . 暗号也很容易被偷听&lt;/p&gt;
+
+&lt;h2 id=&#34;谍纸天眼传递消息是如何加密的:39b4bb88524406a59136c759ec09f0f1&#34;&gt;谍纸天眼传递消息是如何加密的&lt;/h2&gt;
+
+&lt;p&gt;叠纸天眼里面有一栋楼那么多的秘密.从来没有泄露.那他是如何做到的呢&lt;/p&gt;
+
+&lt;h3 id=&#34;叠纸天眼使用的是-非对称加密:39b4bb88524406a59136c759ec09f0f1&#34;&gt;叠纸天眼使用的是&lt;code&gt;非对称加密&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;宇文玥有两个东西&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;化影粉&lt;/code&gt;(类似公钥)把&lt;code&gt;化影粉&lt;/code&gt;涂在文字上面,文字就没了&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;显影水&lt;/code&gt;(类似私钥)把&lt;code&gt;显影水&lt;/code&gt;涂在被&lt;code&gt;化影粉&lt;/code&gt;涂过的文字上面,文字又会重新出现&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;这种加密与对称加密不同的是-加密解密不是用的同一种东西:39b4bb88524406a59136c759ec09f0f1&#34;&gt;这种加密与对称加密不同的是,加密解密不是用的同一种东西&lt;/h3&gt;
+
+&lt;p&gt;宇文玥 把&lt;code&gt;化影粉&lt;/code&gt; 发给谍者.人手一份随便用,给别人 也 不要紧.但是&lt;/p&gt;
+
+&lt;h3 id=&#34;显影水-只有他自己有-谁都不给:39b4bb88524406a59136c759ec09f0f1&#34;&gt;&lt;code&gt;显影水&lt;/code&gt;只有他自己有,谁都不给&lt;/h3&gt;
+
+&lt;p&gt;那这样.只要被&lt;code&gt;化影粉&lt;/code&gt;加过密的文字,只有宇文玥自己能解密.这就是&lt;code&gt;非对称加密&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;燕洵家书如何能保证一定出自燕洵之手:39b4bb88524406a59136c759ec09f0f1&#34;&gt;燕洵家书如何能保证一定出自燕洵之手&lt;/h2&gt;
+
+&lt;h3 id=&#34;用叠纸天眼的加密方案是否可以:39b4bb88524406a59136c759ec09f0f1&#34;&gt;用叠纸天眼的加密方案是否可以?&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;不行. 因为&lt;code&gt;化影粉&lt;/code&gt;江湖上到处都是,就算&lt;code&gt;显影水&lt;/code&gt;只有燕世城有,东方还是可以仿照笔迹加上暗号. 一样可以害死燕洵全家&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;比较好的方式&lt;/p&gt;
+
+&lt;p&gt;燕北研制一种新的&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;新化影粉2&lt;/code&gt;(私钥)功能与&lt;code&gt;化影粉&lt;/code&gt;相同&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;新显影水2&lt;/code&gt;(公钥)针对&lt;code&gt;新化影粉2&lt;/code&gt;显形&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;新化影粉2-只有燕洵有-不外传-仅此一瓶-新显影水2-不要紧-燕北的谍者可以人手一份:39b4bb88524406a59136c759ec09f0f1&#34;&gt;&lt;code&gt;新化影粉2&lt;/code&gt;只有燕洵有,不外传,仅此一瓶,&lt;code&gt;新显影水2&lt;/code&gt;不要紧,燕北的谍者可以人手一份.&lt;/h3&gt;
+
+&lt;p&gt;这样以后燕洵写家书约定好用&lt;code&gt;新化影粉2&lt;/code&gt;在家书右下角抹去自己的名字 . 燕世城再收到家书 .&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1.如果右下角有燕洵的名字.那肯定是假的.约定好没名字的.&lt;/p&gt;
+
+&lt;p&gt;2.如果没名字,用&lt;code&gt;新显影水2&lt;/code&gt;涂一下右下角,如果没有名字出现也是假的&lt;/p&gt;
+
+&lt;p&gt;3.只有用&lt;code&gt;新显影水2&lt;/code&gt; 涂右下角出现 燕洵名字的才是真家书&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;原理与现在的数字签名相同&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>如何快速搭建个人博客hugo &#43; github pages</title>
@@ -186,132 +312,6 @@ draft = true
     &amp;lt;/script&amp;gt;
 &amp;lt;!-- 多说公共JS代码 end --&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://dongjian.github.io/post/jiami/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>381423609@qq.com (dongjian)</author>
-      <guid>http://dongjian.github.io/post/jiami/</guid>
-      <description>
-
-&lt;h2 id=&#34;对称加密:39b4bb88524406a59136c759ec09f0f1&#34;&gt;对称加密&lt;/h2&gt;
-
-&lt;p&gt;信息通讯中,为了保证数据不被第三方窃取,加密 必不可少.战争年代谍报中运用最多.在非对称加密出现之前大部分数据都是通过对称加密来时间的
-例如,将26个字母约定好变一个顺序.比如讲 e 和 o 替换
-那&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;I have a dog
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;经加密后就变为&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;I havo a deg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;解密的时候再把 o 和 e 替换回来&lt;/p&gt;
-
-&lt;p&gt;那替换的规则就是用来解密和加密的 key.
-这种 解密加密 用的是同一把key 就是对称加密.
-再举几个对称加密的例子
-比如&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;-&amp;gt;地振高冈一派西山千古秀
-&amp;lt;-门朝大海三河合水万年流
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;-&amp;gt;天王盖地虎
-&amp;lt;-宝塔镇河妖
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;提前约定好的暗号.也是对称加密.加密规则双方都知道.别人不知道 来达到加密的效果&lt;/p&gt;
-
-&lt;h2 id=&#34;对称加密的缺点:39b4bb88524406a59136c759ec09f0f1&#34;&gt;对称加密的缺点&lt;/h2&gt;
-
-&lt;p&gt;对称加密的最大缺点就是:&lt;/p&gt;
-
-&lt;h3 id=&#34;1-加密规则很容易泄露-因为传递加密的key的时候是没有加密的:39b4bb88524406a59136c759ec09f0f1&#34;&gt;&lt;code&gt;1&lt;/code&gt;.加密规则很容易泄露.因为传递加密的key的时候是没有加密的&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;暗号在口口传播过程中泄露很正常.鹿鼎记后期 康熙都知道喊 地振高冈.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;2-经过大量数据推算-很有可能把key推算出来:39b4bb88524406a59136c759ec09f0f1&#34;&gt;&lt;code&gt;2&lt;/code&gt;.经过大量数据推算,很有可能把key推算出来&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;前面 字母替换的 加密方式 . 在战争时期真的有用过的(忘记哪个老师讲过的),最后被专门搞密码的人破解掉了.破解方式也很简单.他们通过计算每个字母在文章中出现的频率.基本就得出了key. 比如e在单词中出现的次数是最多的.那密文中出现次数最多的字母不出意外就是 e 或者 空格之类.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;燕洵全家是被对称加密害死的:39b4bb88524406a59136c759ec09f0f1&#34;&gt;燕洵全家是被对称加密害死的&lt;/h2&gt;
-
-&lt;p&gt;燕洵回家书的时候加密方式是&lt;code&gt;笔迹&lt;/code&gt;.中间被大梁谍者调换一次.宇文玥又调换一次.最后到了燕世城那里 , 东方说 那都是假的 , 看我这里的 .
-燕世城看了 东方 那里的家书 认为是真的 . 因为&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;①&lt;code&gt;笔迹&lt;/code&gt;对的上&lt;/p&gt;
-
-&lt;p&gt;②有燕洵和燕世城订好的&lt;code&gt;暗号&lt;/code&gt;出现 (如果说到派医生到燕北给燕世城看病,就是燕洵离死不远了).&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;燕世城信了假家书 . 直接进京城找皇上 . 然后全家被杀 .&lt;/p&gt;
-
-&lt;p&gt;这就是对称加密的弊端&lt;code&gt;1&lt;/code&gt; &lt;code&gt;2&lt;/code&gt;. 笔迹可以模仿 . 暗号也很容易被偷听&lt;/p&gt;
-
-&lt;h2 id=&#34;谍纸天眼传递消息是如何加密的:39b4bb88524406a59136c759ec09f0f1&#34;&gt;谍纸天眼传递消息是如何加密的&lt;/h2&gt;
-
-&lt;p&gt;叠纸天眼里面有一栋楼那么多的秘密.从来没有泄露.那他是如何做到的呢&lt;/p&gt;
-
-&lt;h3 id=&#34;叠纸天眼使用的是-非对称加密:39b4bb88524406a59136c759ec09f0f1&#34;&gt;叠纸天眼使用的是&lt;code&gt;非对称加密&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;宇文玥有两个东西&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;化影粉&lt;/code&gt;(类似公钥)把&lt;code&gt;化影粉&lt;/code&gt;涂在文字上面,文字就没了&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;显影水&lt;/code&gt;(类似私钥)把&lt;code&gt;显影水&lt;/code&gt;涂在被&lt;code&gt;化影粉&lt;/code&gt;涂过的文字上面,文字又会重新出现&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;这种加密与对称加密不同的是-加密解密不是用的同一种东西:39b4bb88524406a59136c759ec09f0f1&#34;&gt;这种加密与对称加密不同的是,加密解密不是用的同一种东西&lt;/h3&gt;
-
-&lt;p&gt;宇文玥 把&lt;code&gt;化影粉&lt;/code&gt; 发给谍者.人手一份随便用,给别人 也 不要紧.但是&lt;/p&gt;
-
-&lt;h3 id=&#34;显影水-只有他自己有-谁都不给:39b4bb88524406a59136c759ec09f0f1&#34;&gt;&lt;code&gt;显影水&lt;/code&gt;只有他自己有,谁都不给&lt;/h3&gt;
-
-&lt;p&gt;那这样.只要被&lt;code&gt;化影粉&lt;/code&gt;加过密的文字,只有宇文玥自己能解密.这就是&lt;code&gt;非对称加密&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;燕洵家书如何能保证一定出自燕洵之手:39b4bb88524406a59136c759ec09f0f1&#34;&gt;燕洵家书如何能保证一定出自燕洵之手&lt;/h2&gt;
-
-&lt;h3 id=&#34;用叠纸天眼的加密方案是否可以:39b4bb88524406a59136c759ec09f0f1&#34;&gt;用叠纸天眼的加密方案是否可以?&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;不行. 因为&lt;code&gt;化影粉&lt;/code&gt;江湖上到处都是,就算&lt;code&gt;显影水&lt;/code&gt;只有燕世城有,东方还是可以仿照笔迹加上暗号. 一样可以害死燕洵全家&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;比较好的方式&lt;/p&gt;
-
-&lt;p&gt;燕北研制一种新的&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;新化影粉2&lt;/code&gt;(私钥)功能与&lt;code&gt;化影粉&lt;/code&gt;相同&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;新显影水2&lt;/code&gt;(公钥)针对&lt;code&gt;新化影粉2&lt;/code&gt;显形&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;新化影粉2-只有燕洵有-不外传-仅此一瓶-新显影水2-不要紧-燕北的谍者可以人手一份:39b4bb88524406a59136c759ec09f0f1&#34;&gt;&lt;code&gt;新化影粉2&lt;/code&gt;只有燕洵有,不外传,仅此一瓶,&lt;code&gt;新显影水2&lt;/code&gt;不要紧,燕北的谍者可以人手一份.&lt;/h3&gt;
-
-&lt;p&gt;这样以后燕洵写家书约定好用&lt;code&gt;新化影粉2&lt;/code&gt;在家书右下角抹去自己的名字 . 燕世城再收到家书 .&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;1.如果右下角有燕洵的名字.那肯定是假的.约定好没名字的.&lt;/p&gt;
-
-&lt;p&gt;2.如果没名字,用&lt;code&gt;新显影水2&lt;/code&gt;涂一下右下角,如果没有名字出现也是假的&lt;/p&gt;
-
-&lt;p&gt;3.只有用&lt;code&gt;新显影水2&lt;/code&gt; 涂右下角出现 燕洵名字的才是真家书&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;原理与现在的数字签名相同&lt;/p&gt;
 </description>
     </item>
     
